@@ -11,9 +11,15 @@ module.exports = {
     // ssr: true
   },
   devOptions: {
-    hmr: true
+    hmr: true,
+    hmrDelay: 1000
   },
   buildOptions: {
     watch: true
+  },
+  packageOptions: {
+    env: {
+      ENV_NAME: 'dev'
+    }
   }
 };
